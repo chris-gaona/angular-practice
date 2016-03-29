@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Angular Practice</title>
+    <!-- angular -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+  </head>
+  <body ng-app='learningAngular' ng-controller='practiceCtrl'>
+    {{name}}
+    <div>
+      <ul ng-repeat="puppy in puppies">
+        <li>
+          {{puppy}}
+        </li>
+      </ul>
+      <ul ng-repeat="name in names">
+        <li>
+          {{name.name}}
+        </li>
+      </ul>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
