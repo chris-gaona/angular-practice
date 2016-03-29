@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Angular Practice</title>
+    <title>Angular Routes</title>
     <!-- angular -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
   </head>
-  <body ng-app='learningAngular' ng-controller='practiceCtrl'>
-    {{name}}
-    <div>
-      <ul ng-repeat="puppy in puppies">
-        <li>
-          {{puppy}}
-        </li>
-      </ul>
-      <ul ng-repeat="name in names">
-        <li>
-          {{name.name}}
-        </li>
-      </ul>
-    </div>
-    <script src='main.js'></script>
+  <body ng-app='routesApp'>
+    <h1>Welcome to the Routes Site</h1>
+
+    <div ui-view></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src='routes.js'></script>
+    <script src='home/homeController.js'></script>
+    <script src='github/githubController.js'></script>
+    <script src='gallery/galleryController.js'></script>
   </body>
 </html>
